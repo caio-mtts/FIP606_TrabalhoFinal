@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "FIP606 - Trabalho Final",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Este website foi criado com base em Quarto, com o objetivo de armazenar e compartilhar as informações e scripts gerados para o trabalho final da disciplina FIP 606 - Análise e Visualização de Dados em Fitopatologia, ministrada pelo Prof. Emerson Del Ponte.\n\n\nOs dados utilizados nas análises são de propriedade de Leonardo Packer de Quadros.\n\n\nAs análises foram conduzidas por Caio Mattos Pereira e Leonardo Packer de Quadros."
   },
   {
     "objectID": "3_experimentos de campo.html",
