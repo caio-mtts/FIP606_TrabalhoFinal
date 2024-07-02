@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>FIP606 - Trabalho Final - Pigmentos_fotossintéticos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./house" rel="icon">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">FIP606 - Trabalho Final</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./1_introducao.html"> <i class="bi bi-search" role="img">
+</i> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./3_experimentos de campo.html"> <i class="bi bi-cloud-sun" role="img">
+</i> 
+<span class="menu-text">Coleta dos dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-análises" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-file-code" role="img">
+</i> 
+ <span class="menu-text">Análises</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-análises">    
+        <li>
+    <a class="dropdown-item" href="./2_teste in vitro.html"><i class="bi bi-graph-down" role="img">
+</i> 
+ <span class="dropdown-text">Teste <i>in vitro</i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Parâmetros_de_Produção.html"><i class="bi bi-sign-yield" role="img">
+</i> 
+ <span class="dropdown-text">Parâmetros de Produção</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Pigmentos_fotossintéticos.html"><i class="bi bi-tree" role="img">
+</i> 
+ <span class="dropdown-text">Pigmentos Fotossintéticos</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#carregando-os-pacotes" id="toc-carregando-os-pacotes" class="nav-link active" data-scroll-target="#carregando-os-pacotes">Carregando os pacotes</a></li>
+  <li><a href="#importanto-os-dados---pigmentos-fotossintéticos-pf" id="toc-importanto-os-dados---pigmentos-fotossintéticos-pf" class="nav-link" data-scroll-target="#importanto-os-dados---pigmentos-fotossintéticos-pf">Importanto os dados - Pigmentos Fotossintéticos (PF)</a></li>
+  <li><a href="#transformando-os-dados-para-o-formato-longo" id="toc-transformando-os-dados-para-o-formato-longo" class="nav-link" data-scroll-target="#transformando-os-dados-para-o-formato-longo">Transformando os dados para o formato longo</a></li>
+  <li><a href="#visualização-gráfica" id="toc-visualização-gráfica" class="nav-link" data-scroll-target="#visualização-gráfica">Visualização gráfica</a></li>
+  <li><a href="#clorofila-a-chla" id="toc-clorofila-a-chla" class="nav-link" data-scroll-target="#clorofila-a-chla">Clorofila a (Chla)</a>
+  <ul class="collapse">
+  <li><a href="#modelo-para-análise---chla-experimento-1" id="toc-modelo-para-análise---chla-experimento-1" class="nav-link" data-scroll-target="#modelo-para-análise---chla-experimento-1">Modelo para análise - Chla, experimento 1</a></li>
+  <li><a href="#modelo-para-análise---chla-experimento-2" id="toc-modelo-para-análise---chla-experimento-2" class="nav-link" data-scroll-target="#modelo-para-análise---chla-experimento-2">Modelo para análise - Chla, experimento 2</a></li>
+  </ul></li>
+  <li><a href="#clorofila-b-chlb" id="toc-clorofila-b-chlb" class="nav-link" data-scroll-target="#clorofila-b-chlb">Clorofila b (Chlb)</a>
+  <ul class="collapse">
+  <li><a href="#modelo-para-análise---chlb-experimento-1" id="toc-modelo-para-análise---chlb-experimento-1" class="nav-link" data-scroll-target="#modelo-para-análise---chlb-experimento-1">Modelo para análise - Chlb, experimento 1</a></li>
+  <li><a href="#modelo-para-análise---chlb-experimento-2" id="toc-modelo-para-análise---chlb-experimento-2" class="nav-link" data-scroll-target="#modelo-para-análise---chlb-experimento-2">Modelo para análise - Chlb, experimento 2</a></li>
+  </ul></li>
+  <li><a href="#carotenoides-crtn" id="toc-carotenoides-crtn" class="nav-link" data-scroll-target="#carotenoides-crtn"><strong>Carotenoides (Crtn)</strong></a>
+  <ul class="collapse">
+  <li><a href="#modelo-para-análise---crtn-experimento-1" id="toc-modelo-para-análise---crtn-experimento-1" class="nav-link" data-scroll-target="#modelo-para-análise---crtn-experimento-1"><strong>Modelo para análise - Crtn, experimento 1</strong></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#modelo-para-análise---crtn-experimento-2" id="toc-modelo-para-análise---crtn-experimento-2" class="nav-link" data-scroll-target="#modelo-para-análise---crtn-experimento-2"><strong>Modelo para análise - Crtn, experimento 2</strong></a></li>
+  </ul></li>
+  <li><a href="#clorofila-a_b-chla_b" id="toc-clorofila-a_b-chla_b" class="nav-link" data-scroll-target="#clorofila-a_b-chla_b">Clorofila a_b (Chla_b)</a>
+  <ul class="collapse">
+  <li><a href="#modelo-para-análise---chla_b-experimento-1" id="toc-modelo-para-análise---chla_b-experimento-1" class="nav-link" data-scroll-target="#modelo-para-análise---chla_b-experimento-1"><strong>Modelo para análise - Chla_b, experimento 1</strong></a></li>
+  <li><a href="#modelo-para-análise---chla_b-experimento-2" id="toc-modelo-para-análise---chla_b-experimento-2" class="nav-link" data-scroll-target="#modelo-para-análise---chla_b-experimento-2"><strong>Modelo para análise - Chla_b, experimento 2</strong></a></li>
+  </ul></li>
+  <li><a href="#clorofila-a-total-chla_t" id="toc-clorofila-a-total-chla_t" class="nav-link" data-scroll-target="#clorofila-a-total-chla_t"><strong>Clorofila a Total (Chla_T)</strong></a>
+  <ul class="collapse">
+  <li><a href="#modelo-para-análise---chla_t-experimento-1" id="toc-modelo-para-análise---chla_t-experimento-1" class="nav-link" data-scroll-target="#modelo-para-análise---chla_t-experimento-1"><strong>Modelo para análise - Chla_T, experimento 1</strong></a></li>
+  <li><a href="#modelo-para-análise---chla_t-experimento-2" id="toc-modelo-para-análise---chla_t-experimento-2" class="nav-link" data-scroll-target="#modelo-para-análise---chla_t-experimento-2"><strong>Modelo para análise - Chla_T, experimento 2</strong></a></li>
+  </ul></li>
+  <li><a href="#tabela-de-pigmentos-fotossintéticos" id="toc-tabela-de-pigmentos-fotossintéticos" class="nav-link" data-scroll-target="#tabela-de-pigmentos-fotossintéticos"><strong>Tabela de Pigmentos Fotossintéticos</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pigmentos_fotossintéticos</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="carregando-os-pacotes" class="level2">
+<h2 class="anchored" data-anchor-id="carregando-os-pacotes">Carregando os pacotes</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gsheet)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(r4pde)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(performance)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(emmeans)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(multcomp)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(multcompView)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="importanto-os-dados---pigmentos-fotossintéticos-pf" class="level2">
+<h2 class="anchored" data-anchor-id="importanto-os-dados---pigmentos-fotossintéticos-pf">Importanto os dados - Pigmentos Fotossintéticos (PF)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>PF <span class="ot">&lt;-</span> <span class="fu">gsheet2tbl</span>(<span class="st">'https://docs.google.com/spreadsheets/d/1t1oOnimLXdx6rqtDiYg6wNXB2byY8_Z-/edit#gid=902369793'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>PF <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">EXPERIMENTO =</span> <span class="fu">as.factor</span>(EXPERIMENTO),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">TRATAMENTO =</span> <span class="fu">as.factor</span>(TRATAMENTO),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">BLOCO =</span> <span class="fu">as.factor</span>(BLOCO)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">Chla_b =</span> <span class="st">"Chla/b"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(PF)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 8
+  EXPERIMENTO TRATAMENTO BLOCO  Chla  Chlb Carotenoides Chla_b Chla_Total
+  &lt;fct&gt;       &lt;fct&gt;      &lt;fct&gt; &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;
+1 1           1          1     0.394 0.199        0.276   1.96      0.593
+2 1           1          2     0.378 0.183        0.273   2.00      0.562
+3 1           1          3     0.532 0.23         0.298   2.32      0.762
+4 1           1          4     0.572 0.244        0.303   2.34      0.816
+5 1           2          1     1.68  1.59         0.33    1.48      3.35 
+6 1           2          2     1.59  1.35         0.328   1.19      2.94 </code></pre>
+</div>
+</div>
+</section>
+<section id="transformando-os-dados-para-o-formato-longo" class="level2">
+<h2 class="anchored" data-anchor-id="transformando-os-dados-para-o-formato-longo">Transformando os dados para o formato longo</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>long_PF <span class="ot">&lt;-</span> <span class="fu">melt</span>(PF)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(long_PF, <span class="at">n =</span> <span class="dv">10</span>L)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   EXPERIMENTO TRATAMENTO BLOCO variable value
+1            1          1     1     Chla 0.394
+2            1          1     2     Chla 0.378
+3            1          1     3     Chla 0.532
+4            1          1     4     Chla 0.572
+5            1          2     1     Chla 1.679
+6            1          2     2     Chla 1.587
+7            1          2     3     Chla 1.583
+8            1          2     4     Chla 1.574
+9            1          3     1     Chla 1.579
+10           1          3     2     Chla 1.457</code></pre>
+</div>
+</div>
+</section>
+<section id="visualização-gráfica" class="level2">
+<h2 class="anchored" data-anchor-id="visualização-gráfica">Visualização gráfica</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(r4pde<span class="sc">::</span><span class="fu">theme_r4pde</span>(<span class="at">font_size =</span> <span class="dv">12</span>))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>long_PF <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(variable, TRATAMENTO))<span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">fill =</span> value), <span class="at">colour =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"lightgrey"</span>, <span class="at">high =</span> <span class="st">"darkgreen"</span>)<span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Pigmentos Fotossintéticos"</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Tratamentos"</span>)<span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"1"</span> <span class="ot">=</span> <span class="st">"Controle"</span>, <span class="st">"2"</span> <span class="ot">=</span> <span class="st">"Fungicida"</span>, <span class="st">"3"</span> <span class="ot">=</span> <span class="st">"SiS + Fungicida"</span>, <span class="st">"4"</span> <span class="ot">=</span> <span class="st">"F SiS F"</span>, <span class="st">"5"</span> <span class="ot">=</span> <span class="st">"SiS F SiS"</span>, <span class="st">"6"</span> <span class="ot">=</span> <span class="st">"SiS"</span>))<span class="sc">+</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">vjust =</span> <span class="sc">+</span><span class="dv">3</span>),</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">vjust =</span> <span class="sc">-</span><span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Pigmentos_fotossintéticos_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="clorofila-a-chla" class="level2">
+<h2 class="anchored" data-anchor-id="clorofila-a-chla">Clorofila a (Chla)</h2>
+<p>Para definir se é possível ou não realizar a análise da varíavel Chla combinando os resultados dos ensaios, será feita uma análise de variância (ANOVA) considerando o experimento (ensaio) como um fator.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>chla <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla <span class="sc">~</span> TRATAMENTO<span class="sc">*</span>EXPERIMENTO <span class="sc">+</span> BLOCO,</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> PF)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(chla)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla
+                       Df  Sum Sq Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO              5 10.9183 2.18366 37.8775 9.551e-13 ***
+EXPERIMENTO             1  0.0017 0.00169  0.0294 0.8650141    
+BLOCO                   3  0.3197 0.10656  1.8483 0.1576499    
+TRATAMENTO:EXPERIMENTO  5  1.7330 0.34661  6.0122 0.0004645 ***
+Residuals              33  1.9025 0.05765                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Pela ANOVA considerando o experimento (ensaio) como um fator, observamos que há interação entre fatores (TRATAMENTO:EXPERIMENTO, valor de probabilidade &lt; 0.05), logo não será possível analisar os dados em conjunto, sendo preciso avaliar cada experimento individualmente.</p>
+<section id="modelo-para-análise---chla-experimento-1" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chla-experimento-1">Modelo para análise - Chla, experimento 1</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Chla_E1 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chla) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>model_Chla_E1 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">data =</span> Chla_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas">Avaliação das premissas</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chla_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.887).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chla_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.885).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova" class="level4">
+<h4 class="anchored" data-anchor-id="anova"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chla_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla
+           Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO  5 5.3955 1.07910 87.7502 1.459e-10 ***
+BLOCO       3 0.0938 0.03126  2.5418   0.09542 .  
+Residuals  15 0.1845 0.01230                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>medias_Chla_E1 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chla_E1, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>medias_Chla_E1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL
+ 1           0.469 0.0554 15    0.351    0.587
+ 2           1.606 0.0554 15    1.488    1.724
+ 3           1.604 0.0554 15    1.486    1.722
+ 4           1.808 0.0554 15    1.689    1.926
+ 5           1.720 0.0554 15    1.602    1.838
+ 6           1.034 0.0554 15    0.916    1.152
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>cld_chla1 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chla_E1,</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>cld_chla1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL .group
+ 1           0.469 0.0554 15    0.351    0.587  A    
+ 6           1.034 0.0554 15    0.916    1.152   B   
+ 3           1.604 0.0554 15    1.486    1.722    C  
+ 2           1.606 0.0554 15    1.488    1.724    C  
+ 5           1.720 0.0554 15    1.602    1.838    C  
+ 4           1.808 0.0554 15    1.689    1.926    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>CV_chla_1 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chla_E1) <span class="sc">%&gt;%</span> </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>CV_chla_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8.07</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="modelo-para-análise---chla-experimento-2" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chla-experimento-2">Modelo para análise - Chla, experimento 2</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>Chla_E2 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>   </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chla) <span class="sc">%&gt;%</span>    </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>model_Chla_E2 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,           </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chla_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-1" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-1">Avaliação das premissas</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chla_E2) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.609).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chla_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.886).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-1" class="level4">
+<h4 class="anchored" data-anchor-id="anova-1"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chla_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla
+           Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO  5 7.2559 1.45118 18.4194 6.315e-06 ***
+BLOCO       3 0.7621 0.25404  3.2245   0.05271 .  
+Residuals  15 1.1818 0.07879                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-1" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-1"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>medias_Chla_E2 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chla_E2, <span class="sc">~</span> TRATAMENTO, </span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>medias_Chla_E2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean   SE df lower.CL upper.CL
+ 1           0.746 0.14 15    0.447    1.045
+ 2           1.845 0.14 15    1.545    2.144
+ 3           2.087 0.14 15    1.788    2.386
+ 4           1.706 0.14 15    1.407    2.005
+ 5           1.134 0.14 15    0.835    1.433
+ 6           0.651 0.14 15    0.352    0.951
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>cld_chla2 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chla_E2,     </span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>cld_chla2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean   SE df lower.CL upper.CL .group
+ 6           0.651 0.14 15    0.352    0.951  A    
+ 1           0.746 0.14 15    0.447    1.045  A    
+ 5           1.134 0.14 15    0.835    1.433  AB   
+ 4           1.706 0.14 15    1.407    2.005   BC  
+ 2           1.845 0.14 15    1.545    2.144    C  
+ 3           2.087 0.14 15    1.788    2.386    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-1" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-1"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>CV_chla_2 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chla_E2) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>CV_chla_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20.62</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="clorofila-b-chlb" class="level2">
+<h2 class="anchored" data-anchor-id="clorofila-b-chlb">Clorofila b (Chlb)</h2>
+<p>Para definir se é possível ou não realizar a análise da varíavel Chlb combinando os resultados dos ensaios, será feita uma análise de variância (ANOVA) considerando o experimento (ensaio) como um fator.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>chlb <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chlb <span class="sc">~</span> TRATAMENTO<span class="sc">*</span>EXPERIMENTO <span class="sc">+</span> BLOCO,             </span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> PF)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(chlb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chlb
+                       Df Sum Sq Mean Sq  F value    Pr(&gt;F)    
+TRATAMENTO              5 4.8797  0.9759 100.0123 &lt; 2.2e-16 ***
+EXPERIMENTO             1 3.4911  3.4911 357.7575 &lt; 2.2e-16 ***
+BLOCO                   3 0.0491  0.0164   1.6782    0.1907    
+TRATAMENTO:EXPERIMENTO  5 1.8969  0.3794  38.8771 6.654e-13 ***
+Residuals              33 0.3220  0.0098                       
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Pela ANOVA considerando o experimento (ensaio) como um fator, observamos que há interação entre fatores (TRATAMENTO:EXPERIMENTO, valor de probabilidade &lt; 0.05), logo não será possível analisar os dados em conjunto, sendo preciso avaliar cada experimento individualmente.</p>
+<section id="modelo-para-análise---chlb-experimento-1" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chlb-experimento-1">Modelo para análise - Chlb, experimento 1</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>Chlb_E1 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>   </span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chlb) <span class="sc">%&gt;%</span>    </span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>model_Chlb_E1 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chlb <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,           </span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chlb_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-2" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-2">Avaliação das premissas</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chlb_E1) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.535).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chlb_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.051).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-2" class="level4">
+<h4 class="anchored" data-anchor-id="anova-2"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chlb_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chlb
+           Df Sum Sq Mean Sq  F value   Pr(&gt;F)    
+TRATAMENTO  5 6.1265 1.22530 195.6973 4.19e-13 ***
+BLOCO       3 0.0713 0.02377   3.7971  0.03301 *  
+Residuals  15 0.0939 0.00626                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-2" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-2"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>medias_Chlb_E1 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chlb_E1, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>medias_Chlb_E1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL
+ 1           0.214 0.0396 15    0.130    0.298
+ 2           1.538 0.0396 15    1.453    1.622
+ 3           1.096 0.0396 15    1.012    1.181
+ 4           1.209 0.0396 15    1.124    1.293
+ 5           1.403 0.0396 15    1.319    1.487
+ 6           0.355 0.0396 15    0.271    0.440
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>cld_chlb1 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chlb_E1,     </span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>cld_chlb1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL .group
+ 1           0.214 0.0396 15    0.130    0.298  A    
+ 6           0.355 0.0396 15    0.271    0.440  A    
+ 3           1.096 0.0396 15    1.012    1.181   B   
+ 4           1.209 0.0396 15    1.124    1.293   B   
+ 5           1.403 0.0396 15    1.319    1.487    C  
+ 2           1.538 0.0396 15    1.453    1.622    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-2" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-2"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>CV_chlb_1 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chlb_E1) <span class="sc">%&gt;%</span>    </span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)  </span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>CV_chlb_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8.16</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="modelo-para-análise---chlb-experimento-2" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chlb-experimento-2">Modelo para análise - Chlb, experimento 2</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>Chlb_E2 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>      </span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chlb) <span class="sc">%&gt;%</span>       </span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>model_Chlb_E2 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chlb <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chlb_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-3" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-3">Avaliação das premissas</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chlb_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.279).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chlb_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.819).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-3" class="level4">
+<h4 class="anchored" data-anchor-id="anova-3"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chlb_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chlb
+           Df  Sum Sq  Mean Sq F value   Pr(&gt;F)    
+TRATAMENTO  5 0.65011 0.130022 15.6331 1.74e-05 ***
+BLOCO       3 0.08115 0.027052  3.2525  0.05148 .  
+Residuals  15 0.12476 0.008317                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-3" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-3"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>medias_Chlb_E2 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chlb_E2, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>medias_Chlb_E2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL
+ 1           0.250 0.0456 15    0.153    0.347
+ 2           0.601 0.0456 15    0.504    0.698
+ 3           0.648 0.0456 15    0.551    0.745
+ 4           0.500 0.0456 15    0.403    0.598
+ 5           0.356 0.0456 15    0.259    0.454
+ 6           0.222 0.0456 15    0.125    0.320
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>cld_chlb2 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chlb_E2,</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>cld_chlb2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL .group
+ 6           0.222 0.0456 15    0.125    0.320  A    
+ 1           0.250 0.0456 15    0.153    0.347  A    
+ 5           0.356 0.0456 15    0.259    0.454  AB   
+ 4           0.500 0.0456 15    0.403    0.598   BC  
+ 2           0.601 0.0456 15    0.504    0.698    C  
+ 3           0.648 0.0456 15    0.551    0.745    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-3" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-3"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>CV_chlb_2 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chlb_E2) <span class="sc">%&gt;%</span> </span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>CV_chlb_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 21.22</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="carotenoides-crtn" class="level2">
+<h2 class="anchored" data-anchor-id="carotenoides-crtn"><strong>Carotenoides (Crtn)</strong></h2>
+<p>Para definir se é possível ou não realizar a análise da varíavel Carotenoides (Crtn) combinando os resultados dos ensaios, será feita uma análise de variância (ANOVA) considerando o experimento (ensaio) como um fator.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>Crtn <span class="ot">&lt;-</span> <span class="fu">lm</span> (Carotenoides <span class="sc">~</span> TRATAMENTO<span class="sc">*</span>EXPERIMENTO <span class="sc">+</span> BLOCO,</span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> PF)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(Crtn)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Carotenoides
+                       Df   Sum Sq   Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO              5 0.106053 0.0212107  9.4299 1.178e-05 ***
+EXPERIMENTO             1 0.000243 0.0002430  0.1080    0.7445    
+BLOCO                   3 0.010408 0.0034693  1.5424    0.2219    
+TRATAMENTO:EXPERIMENTO  5 0.040514 0.0081029  3.6024    0.0104 *  
+Residuals              33 0.074227 0.0022493                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Pela ANOVA considerando o experimento (ensaio) como um fator, observamos que há interação entre fatores (TRATAMENTO:EXPERIMENTO, valor de probabilidade &lt; 0.05), logo não será possível analisar os dados em conjunto, sendo preciso avaliar cada experimento individualmente.</p>
+<section id="modelo-para-análise---crtn-experimento-1" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---crtn-experimento-1"><strong>Modelo para análise - Crtn, experimento 1</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>Crtn_E1 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Carotenoides) <span class="sc">%&gt;%</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>model_Crtn_E1 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Carotenoides <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Crtn_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-4" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-4"><strong>Avaliação das premissas</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Crtn_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.547).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Crtn_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.441).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-4" class="level4">
+<h4 class="anchored" data-anchor-id="anova-4"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Crtn_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Carotenoides
+           Df   Sum Sq   Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO  5 0.038701 0.0077403  8.0010 0.0007542 ***
+BLOCO       3 0.002355 0.0007850  0.8115 0.5071356    
+Residuals  15 0.014511 0.0009674                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-4" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-4"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>medias_Crtn_E1 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Crtn_E1, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>medias_Crtn_E1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL
+ 1           0.287 0.0156 15    0.254    0.321
+ 2           0.321 0.0156 15    0.288    0.354
+ 3           0.373 0.0156 15    0.340    0.406
+ 4           0.407 0.0156 15    0.374    0.440
+ 5           0.383 0.0156 15    0.349    0.416
+ 6           0.339 0.0156 15    0.306    0.372
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>cld_crtn1 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Crtn_E1,</span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>cld_crtn1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL .group
+ 1           0.287 0.0156 15    0.254    0.321  A    
+ 2           0.321 0.0156 15    0.288    0.354  AB   
+ 6           0.339 0.0156 15    0.306    0.372  ABC  
+ 3           0.373 0.0156 15    0.340    0.406   BC  
+ 5           0.383 0.0156 15    0.349    0.416   BC  
+ 4           0.407 0.0156 15    0.374    0.440    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-4" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-4"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>CV_crtn_1 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Crtn_E1) <span class="sc">%&gt;%</span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)</span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a>CV_crtn_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8.85</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
+<section id="modelo-para-análise---crtn-experimento-2" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---crtn-experimento-2"><strong>Modelo para análise - Crtn, experimento 2</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>Crtn_E2 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Carotenoides) <span class="sc">%&gt;%</span></span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>model_Crtn_E2 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Carotenoides <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Crtn_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-5" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-5"><strong>Avaliação das premissas</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Crtn_E2) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.690).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Crtn_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.517).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-5" class="level4">
+<h4 class="anchored" data-anchor-id="anova-5"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Crtn_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Carotenoides
+           Df   Sum Sq   Mean Sq F value   Pr(&gt;F)    
+TRATAMENTO  5 0.107866 0.0215733  7.9189 0.000795 ***
+BLOCO       3 0.026904 0.0089680  3.2919 0.049812 *  
+Residuals  15 0.040864 0.0027243                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-5" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-5"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>medias_Crtn_E2 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Crtn_E2, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb95-3"><a href="#cb95-3" aria-hidden="true" tabindex="-1"></a>medias_Crtn_E2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL
+ 1           0.269 0.0261 15    0.213    0.325
+ 2           0.394 0.0261 15    0.338    0.449
+ 3           0.446 0.0261 15    0.390    0.501
+ 4           0.388 0.0261 15    0.332    0.443
+ 5           0.321 0.0261 15    0.266    0.377
+ 6           0.266 0.0261 15    0.210    0.321
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>cld_crtn2 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Crtn_E2,</span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a>cld_crtn2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL .group
+ 6           0.266 0.0261 15    0.210    0.321  A    
+ 1           0.269 0.0261 15    0.213    0.325  AB   
+ 5           0.321 0.0261 15    0.266    0.377  ABC  
+ 4           0.388 0.0261 15    0.332    0.443   BCD 
+ 2           0.394 0.0261 15    0.338    0.449    CD 
+ 3           0.446 0.0261 15    0.390    0.501     D 
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-5" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-5"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>CV_crtn_2 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Crtn_E2) <span class="sc">%&gt;%</span></span>
+<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)</span>
+<span id="cb99-3"><a href="#cb99-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb99-4"><a href="#cb99-4" aria-hidden="true" tabindex="-1"></a>CV_crtn_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 15.04</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="clorofila-a_b-chla_b" class="level2">
+<h2 class="anchored" data-anchor-id="clorofila-a_b-chla_b">Clorofila a_b (Chla_b)</h2>
+<p>Para definir se é possível ou não realizar a análise da varíavel Chlb combinando os resultados dos ensaios, será feita uma análise de variância (ANOVA) considerando o experimento (ensaio) como um fator.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>chla_b <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla_b <span class="sc">~</span> TRATAMENTO<span class="sc">*</span>EXPERIMENTO <span class="sc">+</span> BLOCO,             </span>
+<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> PF)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(chla_b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla_b
+                       Df  Sum Sq Mean Sq  F value    Pr(&gt;F)    
+TRATAMENTO              5  2.7676  0.5535  14.7903 1.259e-07 ***
+EXPERIMENTO             1 21.6451 21.6451 578.3695 &lt; 2.2e-16 ***
+BLOCO                   3  0.0085  0.0028   0.0758    0.9726    
+TRATAMENTO:EXPERIMENTO  5  5.9525  1.1905  31.8108 1.033e-11 ***
+Residuals              33  1.2350  0.0374                       
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Pela ANOVA considerando o experimento (ensaio) como um fator, observamos que há interação entre fatores (TRATAMENTO:EXPERIMENTO, valor de probabilidade &lt; 0.05), logo não será possível analisar os dados em conjunto, sendo preciso avaliar cada experimento individualmente.</p>
+<section id="modelo-para-análise---chla_b-experimento-1" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chla_b-experimento-1"><strong>Modelo para análise - Chla_b, experimento 1</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>Chla_b_E1 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>   </span>
+<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chla_b) <span class="sc">%&gt;%</span>    </span>
+<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a>model_Chla_b_E1 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla_b <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,           </span>
+<span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chla_b_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-6" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-6"><strong>Avaliação das premissas</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chla_b_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.837).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chla_b_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.176).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-6" class="level4">
+<h4 class="anchored" data-anchor-id="anova-6"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chla_b_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla_b
+           Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+TRATAMENTO  5 8.0736 1.61473 31.8658 1.77e-07 ***
+BLOCO       3 0.0114 0.00379  0.0749   0.9726    
+Residuals  15 0.7601 0.05067                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-6" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-6"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a>medias_Chla_b_E1 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chla_b_E1, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-4"><a href="#cb112-4" aria-hidden="true" tabindex="-1"></a>medias_Chla_b_E1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean    SE df lower.CL upper.CL
+ 1            2.15 0.113 15     1.91     2.39
+ 2            1.27 0.113 15     1.03     1.51
+ 3            1.46 0.113 15     1.22     1.70
+ 4            1.55 0.113 15     1.31     1.79
+ 5            1.36 0.113 15     1.12     1.60
+ 6            2.92 0.113 15     2.68     3.16
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a>cld_chla_b1 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chla_b_E1,</span>
+<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb114-4"><a href="#cb114-4" aria-hidden="true" tabindex="-1"></a>cld_chla_b1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean    SE df lower.CL upper.CL .group
+ 2            1.27 0.113 15     1.03     1.51  A    
+ 5            1.36 0.113 15     1.12     1.60  A    
+ 3            1.46 0.113 15     1.22     1.70  A    
+ 4            1.55 0.113 15     1.31     1.79  A    
+ 1            2.15 0.113 15     1.91     2.39   B   
+ 6            2.92 0.113 15     2.68     3.16    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-6" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-6"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a>CV_chla_b_1 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chla_b_E1) <span class="sc">%&gt;%</span>    </span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)  </span>
+<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb116-4"><a href="#cb116-4" aria-hidden="true" tabindex="-1"></a>CV_chla_b_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 12.61</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="modelo-para-análise---chla_b-experimento-2" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chla_b-experimento-2"><strong>Modelo para análise - Chla_b, experimento 2</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a>Chla_b_E2 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>   </span>
+<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chla_b) <span class="sc">%&gt;%</span>    </span>
+<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>model_Chla_b_E2 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla_b <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,           </span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chla_b_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-7" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-7"><strong>Avaliação das premissas</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chla_b_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.414).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chla_b_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.105).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-7" class="level4">
+<h4 class="anchored" data-anchor-id="anova-7"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chla_b_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla_b
+           Df  Sum Sq  Mean Sq F value  Pr(&gt;F)  
+TRATAMENTO  5 0.64645 0.129291  4.1863 0.01396 *
+BLOCO       3 0.00878 0.002927  0.0948 0.96176  
+Residuals  15 0.46327 0.030884                  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-7" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-7"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a>medias_Chla_b_E2 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chla_b_E2, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb126-2"><a href="#cb126-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-3"><a href="#cb126-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb126-4"><a href="#cb126-4" aria-hidden="true" tabindex="-1"></a>medias_Chla_b_E2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL
+ 1            2.98 0.0879 15     2.79     3.17
+ 2            3.10 0.0879 15     2.91     3.28
+ 3            3.23 0.0879 15     3.04     3.42
+ 4            3.41 0.0879 15     3.22     3.60
+ 5            3.15 0.0879 15     2.96     3.34
+ 6            2.91 0.0879 15     2.72     3.09
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a>cld_chla_b2 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chla_b_E2,</span>
+<span id="cb128-2"><a href="#cb128-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb128-3"><a href="#cb128-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb128-4"><a href="#cb128-4" aria-hidden="true" tabindex="-1"></a>cld_chla_b2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean     SE df lower.CL upper.CL .group
+ 6            2.91 0.0879 15     2.72     3.09  A    
+ 1            2.98 0.0879 15     2.79     3.17  A    
+ 2            3.10 0.0879 15     2.91     3.28  AB   
+ 5            3.15 0.0879 15     2.96     3.34  AB   
+ 3            3.23 0.0879 15     3.04     3.42  AB   
+ 4            3.41 0.0879 15     3.22     3.60   B   
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-7" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-7"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a>CV_chla_b_2 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chla_b_E2) <span class="sc">%&gt;%</span>    </span>
+<span id="cb130-2"><a href="#cb130-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)  </span>
+<span id="cb130-3"><a href="#cb130-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb130-4"><a href="#cb130-4" aria-hidden="true" tabindex="-1"></a>CV_chla_b_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.62</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="clorofila-a-total-chla_t" class="level2">
+<h2 class="anchored" data-anchor-id="clorofila-a-total-chla_t"><strong>Clorofila a Total (Chla_T)</strong></h2>
+<p>Para definir se é possível ou não realizar a análise da varíavel Chlb combinando os resultados dos ensaios, será feita uma análise de variância (ANOVA) considerando o experimento (ensaio) como um fator.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a>chla_total <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla_Total <span class="sc">~</span> TRATAMENTO<span class="sc">*</span>EXPERIMENTO <span class="sc">+</span> BLOCO,             </span>
+<span id="cb132-2"><a href="#cb132-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> PF)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(chla_total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla_Total
+                       Df  Sum Sq Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO              5 29.5023  5.9005 57.4256 2.518e-15 ***
+EXPERIMENTO             1  3.7235  3.7235 36.2390 9.099e-07 ***
+BLOCO                   3  0.7949  0.2650  2.5786   0.07026 .  
+TRATAMENTO:EXPERIMENTO  5  4.9213  0.9843  9.5792 1.020e-05 ***
+Residuals              33  3.3907  0.1027                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Pela ANOVA considerando o experimento (ensaio) como um fator, observamos que há interação entre fatores (TRATAMENTO:EXPERIMENTO, valor de probabilidade &lt; 0.05), logo não será possível analisar os dados em conjunto, sendo preciso avaliar cada experimento individualmente.</p>
+<section id="modelo-para-análise---chla_t-experimento-1" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chla_t-experimento-1"><strong>Modelo para análise - Chla_T, experimento 1</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a>Chla_total_E1 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>   </span>
+<span id="cb135-2"><a href="#cb135-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chla_Total) <span class="sc">%&gt;%</span>    </span>
+<span id="cb135-3"><a href="#cb135-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a>model_Chla_total_E1 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla_Total <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,           </span>
+<span id="cb136-2"><a href="#cb136-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chla_total_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-8" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-8"><strong>Avaliação das premissas</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href="#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chla_total_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.438).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chla_total_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.938).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-8" class="level4">
+<h4 class="anchored" data-anchor-id="anova-8"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chla_total_E1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla_Total
+           Df  Sum Sq Mean Sq  F value    Pr(&gt;F)    
+TRATAMENTO  5 22.1980  4.4396 157.1266 2.104e-12 ***
+BLOCO       3  0.3823  0.1274   4.5099   0.01909 *  
+Residuals  15  0.4238  0.0283                       
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-8" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-8"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a>medias_Chla_total_E1 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chla_total_E1, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb143-2"><a href="#cb143-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb143-3"><a href="#cb143-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb143-4"><a href="#cb143-4" aria-hidden="true" tabindex="-1"></a>medias_Chla_total_E1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean    SE df lower.CL upper.CL
+ 1           0.683 0.084 15    0.504    0.862
+ 2           3.124 0.084 15    2.945    3.303
+ 3           2.704 0.084 15    2.524    2.883
+ 4           3.011 0.084 15    2.832    3.191
+ 5           3.179 0.084 15    2.999    3.358
+ 6           1.389 0.084 15    1.210    1.568
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a>cld_chla_t1 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chla_total_E1,</span>
+<span id="cb145-2"><a href="#cb145-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb145-3"><a href="#cb145-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb145-4"><a href="#cb145-4" aria-hidden="true" tabindex="-1"></a>cld_chla_t1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean    SE df lower.CL upper.CL .group
+ 1           0.683 0.084 15    0.504    0.862  A    
+ 6           1.389 0.084 15    1.210    1.568   B   
+ 3           2.704 0.084 15    2.524    2.883    C  
+ 4           3.011 0.084 15    2.832    3.191    CD 
+ 2           3.124 0.084 15    2.945    3.303     D 
+ 5           3.179 0.084 15    2.999    3.358     D 
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-8" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-8"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a>CV_chla_total_1 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chla_total_E1) <span class="sc">%&gt;%</span>    </span>
+<span id="cb147-2"><a href="#cb147-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)  </span>
+<span id="cb147-3"><a href="#cb147-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb147-4"><a href="#cb147-4" aria-hidden="true" tabindex="-1"></a>CV_chla_total_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.16</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="modelo-para-análise---chla_t-experimento-2" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-para-análise---chla_t-experimento-2"><strong>Modelo para análise - Chla_T, experimento 2</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb149"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a href="#cb149-1" aria-hidden="true" tabindex="-1"></a>Chla_total_E2 <span class="ot">&lt;-</span> PF <span class="sc">%&gt;%</span>   </span>
+<span id="cb149-2"><a href="#cb149-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(EXPERIMENTO<span class="sc">:</span>BLOCO, Chla_Total) <span class="sc">%&gt;%</span>    </span>
+<span id="cb149-3"><a href="#cb149-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(EXPERIMENTO <span class="sc">==</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb150"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a>model_Chla_total_E2 <span class="ot">&lt;-</span> <span class="fu">lm</span> (Chla_Total <span class="sc">~</span> TRATAMENTO <span class="sc">+</span> BLOCO,           </span>
+<span id="cb150-2"><a href="#cb150-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> Chla_total_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="avaliação-das-premissas-9" class="level4">
+<h4 class="anchored" data-anchor-id="avaliação-das-premissas-9"><strong>Avaliação das premissas</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb151"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href="#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_normality</span>(model_Chla_total_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: residuals appear as normally distributed (p = 0.501).</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb153"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb153-1"><a href="#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check_heteroscedasticity</span>(model_Chla_total_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OK: Error variance appears to be homoscedastic (p = 0.842).</code></pre>
+</div>
+</div>
+<p>Pelos resultados obtidos para as análises de normalidade e homocedasticidade, observamos que os dados atendem às pressuposições da ANOVA, com isso podemos prosseguir.</p>
+</section>
+<section id="anova-9" class="level4">
+<h4 class="anchored" data-anchor-id="anova-9"><strong>ANOVA</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb155"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb155-1"><a href="#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(model_Chla_total_E2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Chla_Total
+           Df  Sum Sq Mean Sq F value    Pr(&gt;F)    
+TRATAMENTO  5 12.2256 2.44512 17.9554 7.408e-06 ***
+BLOCO       3  1.3368 0.44561  3.2723   0.05063 .  
+Residuals  15  2.0427 0.13618                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="comparação-de-médias-9" class="level4">
+<h4 class="anchored" data-anchor-id="comparação-de-médias-9"><strong>Comparação de médias</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb157"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a>medias_Chla_total_E2 <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(model_Chla_total_E2, <span class="sc">~</span> TRATAMENTO, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb157-2"><a href="#cb157-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb157-3"><a href="#cb157-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb157-4"><a href="#cb157-4" aria-hidden="true" tabindex="-1"></a>medias_Chla_total_E2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean    SE df lower.CL upper.CL
+ 1           0.996 0.185 15    0.603     1.39
+ 2           2.446 0.185 15    2.052     2.84
+ 3           2.735 0.185 15    2.342     3.13
+ 4           2.207 0.185 15    1.814     2.60
+ 5           1.490 0.185 15    1.097     1.88
+ 6           0.874 0.185 15    0.481     1.27
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb159"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb159-1"><a href="#cb159-1" aria-hidden="true" tabindex="-1"></a>cld_chla_t2 <span class="ot">&lt;-</span> <span class="fu">cld</span>(medias_Chla_total_E2,</span>
+<span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">Letters =</span> LETTERS)</span>
+<span id="cb159-3"><a href="#cb159-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb159-4"><a href="#cb159-4" aria-hidden="true" tabindex="-1"></a>cld_chla_t2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> TRATAMENTO emmean    SE df lower.CL upper.CL .group
+ 6           0.874 0.185 15    0.481     1.27  A    
+ 1           0.996 0.185 15    0.603     1.39  A    
+ 5           1.490 0.185 15    1.097     1.88  AB   
+ 4           2.207 0.185 15    1.814     2.60   BC  
+ 2           2.446 0.185 15    2.052     2.84    C  
+ 3           2.735 0.185 15    2.342     3.13    C  
+
+Results are averaged over the levels of: BLOCO 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. </code></pre>
+</div>
+</div>
+</section>
+<section id="coeficiente-de-variação-cv-9" class="level4">
+<h4 class="anchored" data-anchor-id="coeficiente-de-variação-cv-9"><strong>Coeficiente de Variação (CV)</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb161"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb161-1"><a href="#cb161-1" aria-hidden="true" tabindex="-1"></a>CV_chla_total_2 <span class="ot">&lt;-</span> agricolae<span class="sc">::</span><span class="fu">cv.model</span>(model_Chla_total_E2) <span class="sc">%&gt;%</span>    </span>
+<span id="cb161-2"><a href="#cb161-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="at">digits =</span> <span class="dv">2</span>)  </span>
+<span id="cb161-3"><a href="#cb161-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb161-4"><a href="#cb161-4" aria-hidden="true" tabindex="-1"></a>CV_chla_total_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20.6</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="tabela-de-pigmentos-fotossintéticos" class="level2">
+<h2 class="anchored" data-anchor-id="tabela-de-pigmentos-fotossintéticos"><strong>Tabela de Pigmentos Fotossintéticos</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb163"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb163-1"><a href="#cb163-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definindo as tabelas contendo os tratamentos, médias e agrupamentos</span></span>
+<span id="cb163-2"><a href="#cb163-2" aria-hidden="true" tabindex="-1"></a>table_chla1 <span class="ot">&lt;-</span> cld_chla1 <span class="sc">%&gt;%</span></span>
+<span id="cb163-3"><a href="#cb163-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-4"><a href="#cb163-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-5"><a href="#cb163-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-6"><a href="#cb163-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> (<span class="fu">c</span>(<span class="st">"Controle"</span>, <span class="st">"Fungicida"</span>, <span class="st">"SiS + Fungicida"</span>, <span class="st">"F SiS F"</span>, <span class="st">"SiS F SiS"</span>, <span class="st">"SiS"</span>)))</span>
+<span id="cb163-7"><a href="#cb163-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-8"><a href="#cb163-8" aria-hidden="true" tabindex="-1"></a>table_chla2 <span class="ot">&lt;-</span> cld_chla2 <span class="sc">%&gt;%</span></span>
+<span id="cb163-9"><a href="#cb163-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-10"><a href="#cb163-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-11"><a href="#cb163-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-12"><a href="#cb163-12" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-13"><a href="#cb163-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-14"><a href="#cb163-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-15"><a href="#cb163-15" aria-hidden="true" tabindex="-1"></a>table_chlb1 <span class="ot">&lt;-</span> cld_chlb1 <span class="sc">%&gt;%</span></span>
+<span id="cb163-16"><a href="#cb163-16" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-17"><a href="#cb163-17" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-18"><a href="#cb163-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-19"><a href="#cb163-19" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-20"><a href="#cb163-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-21"><a href="#cb163-21" aria-hidden="true" tabindex="-1"></a>table_chlb2 <span class="ot">&lt;-</span> cld_chlb2  <span class="sc">%&gt;%</span></span>
+<span id="cb163-22"><a href="#cb163-22" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-23"><a href="#cb163-23" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-24"><a href="#cb163-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-25"><a href="#cb163-25" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-26"><a href="#cb163-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-27"><a href="#cb163-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-28"><a href="#cb163-28" aria-hidden="true" tabindex="-1"></a>table_crtn1 <span class="ot">&lt;-</span> cld_crtn1 <span class="sc">%&gt;%</span></span>
+<span id="cb163-29"><a href="#cb163-29" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-30"><a href="#cb163-30" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-31"><a href="#cb163-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>))<span class="sc">%&gt;%</span> </span>
+<span id="cb163-32"><a href="#cb163-32" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-33"><a href="#cb163-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-34"><a href="#cb163-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-35"><a href="#cb163-35" aria-hidden="true" tabindex="-1"></a>table_crtn2 <span class="ot">&lt;-</span> cld_crtn2  <span class="sc">%&gt;%</span></span>
+<span id="cb163-36"><a href="#cb163-36" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-37"><a href="#cb163-37" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-38"><a href="#cb163-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-39"><a href="#cb163-39" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-40"><a href="#cb163-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-41"><a href="#cb163-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-42"><a href="#cb163-42" aria-hidden="true" tabindex="-1"></a>table_chla_b1 <span class="ot">&lt;-</span> cld_chla_b1  <span class="sc">%&gt;%</span></span>
+<span id="cb163-43"><a href="#cb163-43" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-44"><a href="#cb163-44" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-45"><a href="#cb163-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>))<span class="sc">%&gt;%</span> </span>
+<span id="cb163-46"><a href="#cb163-46" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-47"><a href="#cb163-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-48"><a href="#cb163-48" aria-hidden="true" tabindex="-1"></a>table_chla_b2 <span class="ot">&lt;-</span> cld_chla_b2  <span class="sc">%&gt;%</span></span>
+<span id="cb163-49"><a href="#cb163-49" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-50"><a href="#cb163-50" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-51"><a href="#cb163-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-52"><a href="#cb163-52" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-53"><a href="#cb163-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-54"><a href="#cb163-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-55"><a href="#cb163-55" aria-hidden="true" tabindex="-1"></a>table_chla_t1 <span class="ot">&lt;-</span> cld_chla_t1 <span class="sc">%&gt;%</span></span>
+<span id="cb163-56"><a href="#cb163-56" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-57"><a href="#cb163-57" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-58"><a href="#cb163-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>))<span class="sc">%&gt;%</span> </span>
+<span id="cb163-59"><a href="#cb163-59" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-60"><a href="#cb163-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-61"><a href="#cb163-61" aria-hidden="true" tabindex="-1"></a>table_chla_t2 <span class="ot">&lt;-</span> cld_chla_t2 <span class="sc">%&gt;%</span></span>
+<span id="cb163-62"><a href="#cb163-62" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(TRATAMENTO, emmean, .group) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-63"><a href="#cb163-63" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(TRATAMENTO) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-64"><a href="#cb163-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">emmean =</span> <span class="fu">round</span>(emmean, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-65"><a href="#cb163-65" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">TRATAMENTO =</span> <span class="cn">NULL</span>)</span>
+<span id="cb163-66"><a href="#cb163-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-67"><a href="#cb163-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-68"><a href="#cb163-68" aria-hidden="true" tabindex="-1"></a><span class="co"># Definindo linha com o coeficiente de Variação</span></span>
+<span id="cb163-69"><a href="#cb163-69" aria-hidden="true" tabindex="-1"></a>linha_CV <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'CV'</span>,CV_chla_1,<span class="st">' '</span>,CV_chla_2,<span class="st">' '</span>,CV_chlb_1,<span class="st">' '</span>,CV_chlb_2,<span class="st">' '</span>,CV_crtn_1, <span class="st">' '</span>,CV_crtn_2, <span class="st">' '</span>,CV_chla_b_1,<span class="st">' '</span>,CV_chla_b_2,<span class="st">' '</span>,CV_chla_total_1,<span class="st">' '</span>,CV_chla_total_2,<span class="st">' '</span>)</span>
+<span id="cb163-70"><a href="#cb163-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-71"><a href="#cb163-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-72"><a href="#cb163-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinando as tabelas</span></span>
+<span id="cb163-73"><a href="#cb163-73" aria-hidden="true" tabindex="-1"></a>combined_table_PF <span class="ot">&lt;-</span> <span class="fu">cbind</span>(table_chla1, table_chla2, table_chlb1, table_chlb2, table_crtn1, table_crtn2, table_chla_b1, table_chla_b2, table_chla_t1, table_chla_t2)</span>
+<span id="cb163-74"><a href="#cb163-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-75"><a href="#cb163-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-76"><a href="#cb163-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinando a tabela anterior com a linha do coeficiente de variação</span></span>
+<span id="cb163-77"><a href="#cb163-77" aria-hidden="true" tabindex="-1"></a>combined_table_PF2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(combined_table_PF, linha_CV)</span>
+<span id="cb163-78"><a href="#cb163-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-79"><a href="#cb163-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-80"><a href="#cb163-80" aria-hidden="true" tabindex="-1"></a><span class="co"># Nomeando as colunas</span></span>
+<span id="cb163-81"><a href="#cb163-81" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(combined_table_PF2) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'Tratamento'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>, <span class="st">'Média'</span>, <span class="st">'Grupo'</span>,<span class="st">'Média'</span>, <span class="st">'Grupo'</span>)</span>
+<span id="cb163-82"><a href="#cb163-82" aria-hidden="true" tabindex="-1"></a>                                  </span>
+<span id="cb163-83"><a href="#cb163-83" aria-hidden="true" tabindex="-1"></a><span class="co"># NA na linha do CV assume "CV (%)"</span></span>
+<span id="cb163-84"><a href="#cb163-84" aria-hidden="true" tabindex="-1"></a>opts <span class="ot">&lt;-</span> <span class="fu">options</span>(<span class="at">knitr.kable.NA =</span> <span class="st">"CV (%)"</span>)</span>
+<span id="cb163-85"><a href="#cb163-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-86"><a href="#cb163-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb163-87"><a href="#cb163-87" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabela final</span></span>
+<span id="cb163-88"><a href="#cb163-88" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb163-89"><a href="#cb163-89" aria-hidden="true" tabindex="-1"></a>    combined_table_PF2,</span>
+<span id="cb163-90"><a href="#cb163-90" aria-hidden="true" tabindex="-1"></a>    <span class="at">align =</span> <span class="st">"cccccc"</span>,</span>
+<span id="cb163-91"><a href="#cb163-91" aria-hidden="true" tabindex="-1"></a>    <span class="at">row.names=</span><span class="cn">FALSE</span>,</span>
+<span id="cb163-92"><a href="#cb163-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">booktabs =</span> <span class="cn">TRUE</span>, <span class="at">valign =</span> <span class="st">'t'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb163-93"><a href="#cb163-93" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_header_above</span>(<span class="fu">c</span>(<span class="st">" "</span> <span class="ot">=</span> <span class="dv">1</span>, <span class="st">"Ensaio 1"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 2"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 1"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 2"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 1"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 2"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 1"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 2"</span> <span class="ot">=</span> <span class="dv">2</span>,<span class="st">"Ensaio 1"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Ensaio 2"</span> <span class="ot">=</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb163-94"><a href="#cb163-94" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_header_above</span>(<span class="fu">c</span>(<span class="st">" "</span> <span class="ot">=</span> <span class="dv">1</span>, <span class="st">"Clorofila a (chla)"</span> <span class="ot">=</span> <span class="dv">4</span>, <span class="st">"Clorofila b (chlb)"</span> <span class="ot">=</span> <span class="dv">4</span>, <span class="st">"Carotenoides (crtn)"</span> <span class="ot">=</span> <span class="dv">4</span>, <span class="st">"Clorofila a/b (chla_b)"</span> <span class="ot">=</span> <span class="dv">4</span>, <span class="st">"Clorofila Total (chlt)"</span> <span class="ot">=</span> <span class="dv">4</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb163-95"><a href="#cb163-95" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_header_above</span>(<span class="fu">c</span>(<span class="st">"Pigmentos Fotossintéticos"</span> <span class="ot">=</span> <span class="dv">21</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="21" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Pigmentos Fotossintéticos
+</div></th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" style="text-align: center; empty-cells: hide; border-bottom: hidden;"></th>
+<th colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Clorofila a (chla)
+</div></th>
+<th colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Clorofila b (chlb)
+</div></th>
+<th colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Carotenoides (crtn)
+</div></th>
+<th colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Clorofila a/b (chla_b)
+</div></th>
+<th colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Clorofila Total (chlt)
+</div></th>
+</tr>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: center; empty-cells: hide; border-bottom: hidden;"></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 1
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 2
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 1
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 2
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 1
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 2
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 1
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 2
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 1
+</div></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Ensaio 2
+</div></th>
+</tr>
+<tr class="odd">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Tratamento</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Média</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Grupo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Controle</td>
+<td style="text-align: center;">0.47</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.75</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.21</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.29</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">2.15</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">2.98</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.68</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">A</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Fungicida</td>
+<td style="text-align: center;">1.61</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1.84</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1.54</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">0.6</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">0.39</td>
+<td style="text-align: center;">CD</td>
+<td style="text-align: center;">1.27</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">3.1</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">3.12</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">2.45</td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">SiS + Fungicida</td>
+<td style="text-align: center;">1.6</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">2.09</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">0.65</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">0.37</td>
+<td style="text-align: center;">BC</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">1.46</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">3.23</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">2.7</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">2.74</td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F SiS F</td>
+<td style="text-align: center;">1.81</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1.71</td>
+<td style="text-align: center;">BC</td>
+<td style="text-align: center;">1.21</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">BC</td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">0.39</td>
+<td style="text-align: center;">BCD</td>
+<td style="text-align: center;">1.55</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">3.41</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">3.01</td>
+<td style="text-align: center;">CD</td>
+<td style="text-align: center;">2.21</td>
+<td style="text-align: center;">BC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">SiS F SiS</td>
+<td style="text-align: center;">1.72</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1.13</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">0.38</td>
+<td style="text-align: center;">BC</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">ABC</td>
+<td style="text-align: center;">1.36</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">3.15</td>
+<td style="text-align: center;">AB</td>
+<td style="text-align: center;">3.18</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">1.49</td>
+<td style="text-align: center;">AB</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">SiS</td>
+<td style="text-align: center;">1.03</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">0.65</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">0.34</td>
+<td style="text-align: center;">ABC</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">2.92</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">2.91</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">1.39</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">0.87</td>
+<td style="text-align: center;">A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">CV</td>
+<td style="text-align: center;">8.07</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">20.62</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">8.16</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">21.22</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">8.85</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15.04</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">12.61</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5.62</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">7.16</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">20.6</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

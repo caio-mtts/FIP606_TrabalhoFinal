@@ -1,0 +1,17 @@
+knitr
+ggplot2
+gsheet
+ggthemes
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+lubridate
+MASS
+drc
+kableExtra
+DT

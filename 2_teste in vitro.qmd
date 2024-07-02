@@ -1,0 +1,104 @@
+---
+title: "Teste in vitro"
+format: html
+editor: visual
+execute: 
+  warning: false
+  error: false
+  freeze: true
+---
+
+Avaliação da inibição de germinação de uredósporos de *Phakopsora pachyrhizi* submetidos a concentrações crescentes de SiS.
+
+```{r}
+#| echo: false
+
+library(knitr)
+
+knitr::include_graphics("Germinação_de_Uredósporos.png")
+```
+
+## Carregamento dos pacotes
+
+```{r}
+library(knitr)
+library(ggplot2)
+library(gsheet)
+library(ggthemes)
+library(tidyverse)
+library(drc)
+library(kableExtra)
+library(DT)
+```
+
+## Importação os dados - Germinação de Uredósporos (GU)
+
+Os dados utilizados nesta análise serão importados de uma planilha google sheet. Após importação, algumas colunas de dados serão transformados para fatores. O intuito é facilitar o desenvolvimento das análises
+
+```{r}
+GU <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1t1oOnimLXdx6rqtDiYg6wNXB2byY8_Z-/edit?gid=949032025#gid=949032025")
+
+GU <- GU %>% 
+  mutate(REPETICAO = as.factor(REPETICAO))
+
+head(GU)
+```
+
+## Cálculo da Germinação Média
+
+```{r}
+GU2 <- GU %>% 
+  group_by(DOSE) %>%
+  summarise(mean_germ = mean(TAXA_DE_GERMINAÇÃO)) %>% 
+  dplyr::mutate(inib = ((54.1900-mean_germ)/54.1900)*100) %>% 
+  round(digits = 2)
+
+head(GU2)
+```
+
+## Modelagem da EC~50~ (modelo não-linear)
+
+Para calcular a dose do produto que é capaz de inibir 50% da germinação dos uredósporos do patógeno faremos uso da função `drm` (pacote **`drc`**) modelando para em Log-logistico com 3 parâmetros.
+
+```{r}
+EC <- drm(mean_germ ~ DOSE,
+                 data = GU2,
+                 fct = LL.3())
+
+summary(EC)
+
+EC
+```
+
+```{r}
+AIC(EC)
+```
+
+## Cálculo da EC~50~
+
+```{r}
+ED(EC, 50, interval = "delta")
+```
+
+Com base no modelo gerado anteriormente e na função `ED`, foi possível estimar que a dose do produto suficiente para inibir 50% da inibição dos uredósporos é de 63,15.
+
+## Tabela de Resultados
+
+```{r}
+colnames(GU2) = c('Dose', "Germinação Média (%)", "Inibição da Germinação (%)")
+
+kable(GU2,
+      align = "ccc")
+```
+
+## Gráfico de Dose ✕ Germinação
+
+```{r}
+plot(EC,
+     xlab = Dose~(ml~L^-1),
+     ylab = "Germinação média (%)",
+     xt = c("0", "20", "40", "60", "80"),
+     ylim = c(0,60),
+     pch = 19,     
+     col = "grey20")
+```

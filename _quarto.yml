@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: docs
+
+execute: 
+  cache: true
+  freeze: true
+
+website:
+  title: "FIP606 - Trabalho Final"
+  favicon: house
+  
+  navbar:
+    left:
+      - href: 1_introducao.qmd
+        text: Sobre
+        icon: search
+      - href: 3_experimentos de campo.qmd
+        text: Coleta dos dados
+        icon: cloud-sun
+      - text: Análises
+        icon: file-code
+        menu:
+          - href: 2_teste in vitro.qmd
+            text: Teste <I>in vitro</I>
+            icon: graph-down
+          - href: Parâmetros_de_Produção.qmd
+            text: Parâmetros de Produção
+            icon: sign-yield
+          - href: Pigmentos_fotossintéticos.qmd
+            text: Pigmentos Fotossintéticos
+            icon: tree
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    toc: true
+
+editor: visual
+

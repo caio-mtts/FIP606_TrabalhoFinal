@@ -1,0 +1,27 @@
+---
+title: "Eficácia da Aplicação Foliar de um Fonte de Silício Solúvel, Alternada ou Combinada com Fungicida, no Manejo da Ferrugem da Soja"
+format: html
+editor: visual
+execute: 
+  warning: false
+  error: false
+  freeze: true
+---
+
+##  Introdução
+
+A ferrugem da soja (FS) é uma das doenças mais agressivas que afetam a cultura da soja. Portanto, é essencial desenvolver estratégias alternativas para o manejo da FS, visando reduzir as perdas de produtividade e a pressão de seleção exercida sobre a população de *Phakopsora pachyrhizi* devido ao uso excessivo de fungicidas. Este estudo avaliou a eficácia da aplicação foliar de uma fonte solúvel de silício, o Silício Forte® (contendo 10% de óxido de potássio, 25% de silício, 3% de óxido de magnésio e 0,01% de óxido de cálcio), produzido pela Verde Fertilizantes Ltda, Brasil, em diferentes programas de aplicação para o manejo da FS. Para isso, foram realizados dois experimentos a campo e um teste in vitro.
+
+```{r}
+#| echo: false
+
+library(knitr)
+
+knitr::include_graphics("Prancha Soja - Leonardo_Campo.jpg")
+```
+
+```{r}
+#| echo: false
+
+knitr::include_graphics("Aerial_View.jpg")
+```
