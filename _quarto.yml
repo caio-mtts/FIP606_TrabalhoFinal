@@ -9,8 +9,12 @@ execute:
 website:
   title: "FIP606 - Trabalho Final"
   favicon: house
+  page-navigation: true
+  back-to-top-navigation: true
   
   navbar:
+    pinned: true
+    
     left:
       - href: 1_introducao.qmd
         text: Sobre
@@ -30,6 +34,26 @@ website:
           - href: Pigmentos_fotossintéticos.qmd
             text: Pigmentos Fotossintéticos
             icon: tree
+           
+    right:
+      - icon: linkedin
+        menu: 
+          - text: Caio Mattos Pereira
+            href: https://www.linkedin.com/in/caio-mattos-10001/
+          - text: Leonardo Packer de Quadros
+            href: https://www.linkedin.com/in/leonardo-packer-de-quadros-a641411a5/
+      - icon: instagram
+        menu: 
+          - text: Caio Mattos Pereira
+            href: https://www.instagram.com/caio.mtts?igsh=MW5nYTQ2Z2l6aWpvbA%3D%3D&utm_source=qr
+          - text: Leonardo Packer de Quadros
+            href: https://www.instagram.com/leonardopacker51?igsh=MWg0NnFwc3QzMWVybQ==
+      - icon: github
+        menu:
+          - text: Caio Mattos Pereira
+            url:  https://github.com/caio-mtts
+          - text: Leonardo Packer de Quadros
+            url:  xxx
 format:
   html:
     theme: sandstone

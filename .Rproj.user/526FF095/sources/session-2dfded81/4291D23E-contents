@@ -1,0 +1,21 @@
+::: grid
+::: g-col-6
+<div style="text-align: center;">
+## Caio M. Pereira
+</div>
+<div style="text-align: center;">
+<img src="Caio.png" alt="Caio M. Pereira" width="200">
+</div>
+<p>Natural de São Paulo (SP), Engenheiro Agrônomo (2019) pela Universidade Federal de Viçosa (UFV), onde também obteve o título de Mestre em Fitopatologia (2021). Atualmente, é aluno de doutorado do Programa de Pós-graduação em Fitopatologia da mesma universidade.</p>
+:::
+
+::: g-col-6
+<div style="text-align: center;">
+## Leonardo P. de Quadros
+</div>
+<div style="text-align: center;">
+<img src="Leonardo.png" alt="Leonardo P. de Quadros" width="200">
+</div>
+<p>Natural de Curitiba (PR), Engenheiro Agrônomo (2019) pela Universidade Federal do Paraná (UFPR). Mestre em Fitopatologia (2021) pela Universidade Federal de Viçosa (UFV), onde, atualmente, é aluno de doutorado do Programa de Pós-graduação em Fitopatologia.</p>
+:::
+:::
