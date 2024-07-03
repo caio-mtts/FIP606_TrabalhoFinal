@@ -253,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#carregando-os-pacotes" id="toc-carregando-os-pacotes" class="nav-link active" data-scroll-target="#carregando-os-pacotes">Carregando os pacotes</a></li>
-  <li><a href="#importanto-os-dados---parametros-de-produção-pp" id="toc-importanto-os-dados---parametros-de-produção-pp" class="nav-link" data-scroll-target="#importanto-os-dados---parametros-de-produção-pp">Importanto os dados - Parametros de Produção (PP)</a></li>
+  <li><a href="#importanto-os-dados---parâmetros-de-produção-pp" id="toc-importanto-os-dados---parâmetros-de-produção-pp" class="nav-link" data-scroll-target="#importanto-os-dados---parâmetros-de-produção-pp">Importanto os dados - Parâmetros de Produção (PP)</a></li>
   <li><a href="#peso-de-mil-grãos-pmg" id="toc-peso-de-mil-grãos-pmg" class="nav-link" data-scroll-target="#peso-de-mil-grãos-pmg">Peso de Mil Grãos (PMG)</a>
   <ul class="collapse">
   <li><a href="#visualização-gráfica" id="toc-visualização-gráfica" class="nav-link" data-scroll-target="#visualização-gráfica">Visualização gráfica</a></li>
@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Parametros_de_producao</h1>
+<h1 class="title">Parâmetros de Produção</h1>
 </div>
 
 
@@ -311,8 +311,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="importanto-os-dados---parametros-de-produção-pp" class="level2">
-<h2 class="anchored" data-anchor-id="importanto-os-dados---parametros-de-produção-pp">Importanto os dados - Parametros de Produção (PP)</h2>
+<section id="importanto-os-dados---parâmetros-de-produção-pp" class="level2">
+<h2 class="anchored" data-anchor-id="importanto-os-dados---parâmetros-de-produção-pp">Importanto os dados - Parâmetros de Produção (PP)</h2>
 <p>Os dados utilizados nesta análise serão importados de uma planilha google sheet. Após importação, algumas colunas de dados serão transformados para fatores. O intuito é facilitar o desenvolvimento das análises.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>PP <span class="ot">&lt;-</span> <span class="fu">gsheet2tbl</span>(<span class="st">"https://docs.google.com/spreadsheets/d/1t1oOnimLXdx6rqtDiYg6wNXB2byY8_Z-/edit#gid=1418573798"</span>)</span>
