@@ -81,14 +81,14 @@
     "href": "index.html",
     "title": "FIP606 - Trabalho Final",
     "section": "",
-    "text": "Este website foi criado com base em Quarto, com o objetivo de armazenar e compartilhar as informações e scripts gerados para o trabalho final da disciplina FIP 606 - Análise e Visualização de Dados em Fitopatologia, ministrada pelo Prof. Emerson Del Ponte.\n\n\nOs dados utilizados nas análises são de propriedade de Leonardo Packer de Quadros.\n\n\nAs análises foram conduzidas por Caio Mattos Pereira e Leonardo Packer de Quadros."
+    "text": "Este website foi criado com base em Quarto, com o objetivo de armazenar e compartilhar as informações e scripts gerados durante o desenvolvimento do trabalho final da disciplina FIP 606 - Análise e Visualização de Dados em Fitopatologia, ministrada pelo Prof. Emerson Del Ponte.\n\n\nOs dados utilizados nas análises são de propriedade de Leonardo Packer de Quadros.\n\n\nAs análises foram conduzidas por Caio Mattos Pereira e Leonardo Packer de Quadros."
   },
   {
     "objectID": "index.html#o-trabalho",
     "href": "index.html#o-trabalho",
     "title": "FIP606 - Trabalho Final",
     "section": "",
-    "text": "Este website foi criado com base em Quarto, com o objetivo de armazenar e compartilhar as informações e scripts gerados para o trabalho final da disciplina FIP 606 - Análise e Visualização de Dados em Fitopatologia, ministrada pelo Prof. Emerson Del Ponte.\n\n\nOs dados utilizados nas análises são de propriedade de Leonardo Packer de Quadros.\n\n\nAs análises foram conduzidas por Caio Mattos Pereira e Leonardo Packer de Quadros."
+    "text": "Este website foi criado com base em Quarto, com o objetivo de armazenar e compartilhar as informações e scripts gerados durante o desenvolvimento do trabalho final da disciplina FIP 606 - Análise e Visualização de Dados em Fitopatologia, ministrada pelo Prof. Emerson Del Ponte.\n\n\nOs dados utilizados nas análises são de propriedade de Leonardo Packer de Quadros.\n\n\nAs análises foram conduzidas por Caio Mattos Pereira e Leonardo Packer de Quadros."
   },
   {
     "objectID": "index.html#os-autores",
@@ -110,6 +110,20 @@
     "title": "FIP606 - Trabalho Final",
     "section": "Leonardo P. de Quadros",
     "text": "Leonardo P. de Quadros"
+  },
+  {
+    "objectID": "7 Conclusão.html",
+    "href": "7 Conclusão.html",
+    "title": "Conclusão",
+    "section": "",
+    "text": "O SiS inibe pouco a germinação de uredósporos, apresentando uma EC50 de 63,15 g/L, acima da dose aplicada no campo.\nA doença apresentou diferenças no seu progresso temporal nas safras de 2021/22 e 2022/23, aumentando de forma tardia, mas mais intensa em 2021/22 do que em 2022/23 nos tratamentos de menor eficiência no controle.\nCom exceção da produção, não foi possível realizar uma análise conjunta entre os experimentos para as demais variáveis.\nA variável desfolha apresentou a maior correlação negativa com a variável produtividade.\nRecomenda-se o uso de SiS em aplicações conjuntas com um fungicida ou de forma alternada, dependendo da pressão de inóculo na área."
+  },
+  {
+    "objectID": "7 Conclusão.html#section",
+    "href": "7 Conclusão.html#section",
+    "title": "Conclusão",
+    "section": "",
+    "text": "O SiS inibe pouco a germinação de uredósporos, apresentando uma EC50 de 63,15 g/L, acima da dose aplicada no campo.\nA doença apresentou diferenças no seu progresso temporal nas safras de 2021/22 e 2022/23, aumentando de forma tardia, mas mais intensa em 2021/22 do que em 2022/23 nos tratamentos de menor eficiência no controle.\nCom exceção da produção, não foi possível realizar uma análise conjunta entre os experimentos para as demais variáveis.\nA variável desfolha apresentou a maior correlação negativa com a variável produtividade.\nRecomenda-se o uso de SiS em aplicações conjuntas com um fungicida ou de forma alternada, dependendo da pressão de inóculo na área."
   },
   {
     "objectID": "5 Progresso Temporal da Doença.html",
@@ -243,6 +257,20 @@
     "title": "Parâmetros Epidemiológicos",
     "section": "",
     "text": "library(gsheet) \nlibrary(tidyverse) \nlibrary(DT) \nlibrary(patchwork) \nlibrary(performance) \nlibrary(emmeans)\nlibrary(DHARMa)\nlibrary(multcomp) \nlibrary(multcompView) \nlibrary(epifitter)\nlibrary(r4pde)\nlibrary(knitr)\nlibrary(kableExtra)"
+  },
+  {
+    "objectID": "6 Análise de Correlação.html",
+    "href": "6 Análise de Correlação.html",
+    "title": "Análise de Correlação",
+    "section": "",
+    "text": "Realização da análise de correlação entre as variáveis respostas para maior entendimento dos ensaios"
+  },
+  {
+    "objectID": "6 Análise de Correlação.html#plot-do-gráfico-de-corrrelação",
+    "href": "6 Análise de Correlação.html#plot-do-gráfico-de-corrrelação",
+    "title": "Análise de Correlação",
+    "section": "Plot do Gráfico de Corrrelação",
+    "text": "Plot do Gráfico de Corrrelação\n\n# Crição de uma paleta de cores usando a paleta viridis\nviridis_colors &lt;- viridis(100)\n\n# Plot da matriz de correlação usando a paleta viridis\ncorrplot(corelacao1, type = \"lower\", col = viridis_colors, tl.col = \"black\", tl.srt = 45)\n\n\n\n\n\n\n\n\nObservação de maior correlação negativa entre produtividade e desfolha, e produtividade e AACPD\n\nPlot das Correlações Produtividade X Desfolha, Produtividade X AACPD e Produtividade X y\n\ntheme_set(r4pde::theme_r4pde(font_size = 10))\n\nplot1 &lt;- cor1 %&gt;% \n  ggplot(aes(x = Desfolha, y = Produtividade)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(x = \"Desfolha\", y = expression(\"Produtividade (kg \" * ha^{-1} * \")\"))\n\n\nplot2 &lt;- cor1 %&gt;% \n  ggplot(aes(AACPD, Produtividade))+\n  geom_point()+\n  geom_smooth(method = \"lm\") +\n  labs(x = \"AACPD\", y = \" \")\n\nplot3 &lt;- cor1 %&gt;% \n  ggplot(aes(y, Produtividade))+\n  geom_point()+\n  geom_smooth(method = \"lm\")+\n  labs(x = \"y\", y = \" \")\n\n\nProdutividade_Correlação &lt;- plot1|plot2|plot3\nProdutividade_Correlação"
   },
   {
     "objectID": "about.html",

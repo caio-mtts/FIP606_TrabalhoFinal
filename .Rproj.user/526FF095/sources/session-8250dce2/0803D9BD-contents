@@ -1,0 +1,84 @@
+---
+title: "Análise de Correlação"
+format: html
+editor: visual
+execute: 
+  warning: false
+  error: false
+  freeze: true
+---
+
+Realização da análise de correlação entre as variáveis respostas para maior entendimento dos ensaios
+
+### Carregamento dos pacotes
+
+```{r}
+library(r4pde)
+library(gsheet)
+library(tidyverse)
+library(patchwork)
+library(AgroR)
+library(viridis)
+library(vegan)
+library (MASS)
+library(corrplot)
+library(DT)
+```
+
+### Importação dos dados
+
+```{r}
+dados <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1t1oOnimLXdx6rqtDiYg6wNXB2byY8_Z-/edit?gid=1891383351#gid=1891383351")
+head(dados)
+```
+
+### Matriz de correlação
+
+```{r}
+# A matriz de correlação
+cor1 <- dados[,4:13]
+corelacao1 <- cor(cor1)
+head(corelacao1)
+```
+
+## Plot do Gráfico de Corrrelação
+
+```{r}
+# Crição de uma paleta de cores usando a paleta viridis
+viridis_colors <- viridis(100)
+
+# Plot da matriz de correlação usando a paleta viridis
+corrplot(corelacao1, type = "lower", col = viridis_colors, tl.col = "black", tl.srt = 45)
+
+```
+
+Observação de maior correlação negativa entre produtividade e desfolha, e produtividade e AACPD
+
+### Plot das Correlações Produtividade X Desfolha, Produtividade X AACPD e Produtividade X y
+
+```{r}
+theme_set(r4pde::theme_r4pde(font_size = 10))
+
+plot1 <- cor1 %>% 
+  ggplot(aes(x = Desfolha, y = Produtividade)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x = "Desfolha", y = expression("Produtividade (kg " * ha^{-1} * ")"))
+
+
+plot2 <- cor1 %>% 
+  ggplot(aes(AACPD, Produtividade))+
+  geom_point()+
+  geom_smooth(method = "lm") +
+  labs(x = "AACPD", y = " ")
+
+plot3 <- cor1 %>% 
+  ggplot(aes(y, Produtividade))+
+  geom_point()+
+  geom_smooth(method = "lm")+
+  labs(x = "y", y = " ")
+
+
+Produtividade_Correlação <- plot1|plot2|plot3
+Produtividade_Correlação
+```

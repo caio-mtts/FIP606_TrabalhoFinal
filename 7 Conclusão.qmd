@@ -1,0 +1,13 @@
+---
+title: "Conclusão"
+format: html
+editor: visual
+---
+
+## 
+
+1.  O SiS inibe pouco a germinação de uredósporos, apresentando uma EC50 de 63,15 g/L, acima da dose aplicada no campo.
+2.  A doença apresentou diferenças no seu progresso temporal nas safras de 2021/22 e 2022/23, aumentando de forma tardia, mas mais intensa em 2021/22 do que em 2022/23 nos tratamentos de menor eficiência no controle.
+3.  Com exceção da produção, não foi possível realizar uma análise conjunta entre os experimentos para as demais variáveis.
+4.  A variável desfolha apresentou a maior correlação negativa com a variável produtividade.
+5.  Recomenda-se o uso de SiS em aplicações conjuntas com um fungicida ou de forma alternada, dependendo da pressão de inóculo na área.

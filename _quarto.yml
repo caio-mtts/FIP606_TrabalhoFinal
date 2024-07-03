@@ -45,7 +45,11 @@ website:
             text: Pigmentos Fotossintéticos
             icon: tree
             
-      - href: Conclusao.qmd
+          - href: 6 Análise de Correlação.qmd
+            text: Análise de Correlação
+            icon: share
+            
+      - href: 7 Conclusão.qmd
         text: Conclusão
         icon: card-checklist
 
@@ -67,10 +71,12 @@ website:
           - text: Caio Mattos Pereira
             url:  https://github.com/caio-mtts
           - text: Leonardo Packer de Quadros
-            url:  xxx
+            url:  https://github.com/leonardopackerdequadros
 format:
   html:
-    theme: sandstone
+    theme: 
+      light: sandstone
+      dark: cyborg
     css: styles.css
     toc: true
 
